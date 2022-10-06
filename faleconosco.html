@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Bellezza Della Duchessa</title>
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <title>Contato - La Bellezza Della Duchessa</title>
+    <link rel="stylesheet" type="text/css" href="./css/style-faleconosco.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <script src="./script/script-faleconosco.js"></script>
 </head>
-
 <body>
     <header class="cabecalho">
         <img src="./images/logo.jpg">
@@ -23,40 +22,63 @@
                 <li><a href="faleconosco.html">FALE CONOSCO</a></li>
             </ul>
         </nav>
-    </header> 
+    </header>
     <main>
-        <form action="/action_page.php">
-            <div class="main_div_formulario">
-                <div class="main_div_formulario_name form_control">
-                    <label for="nomeCompleto" class="label_quality"><b>Nome:</b><font color="red">*</font></label>
-                    <input type="text" class="input_quality" placeholder="" required>
+        <h1>FALE CONOSCO!</h1>
+        <form method="POST" name="formulario">
+            <div class="main_form_div">
+                <label for="nomeCompleto" class="label_quality"><b>Nome (ou Razão Social):</b><font color="red">*</font></label>
+                <input type="text" id="nomeCompleto"  name="nome" onblur="validacaoInput(formulario.nome)" class="input_quality" placeholder="">
+                <font color="red" class="alertas" id="alerta_nome"></font>                 
+                <label for="email" class="label_quality"><b>E-mail:</b><font color="red">*</font></label>
+                <input type="email" id="email" name="email" onblur="validacaoInput(formulario.email)" class="input_quality" placeholder="">
+                <font color="red" class="alertas" id="alerta_email"></font>
+                <label for="telefone" class="label_quality"><b>Telefone</b><font color="red">*</font></label>
+                <input type="tel" id="telefone" onkeyup="mascaraTelefone(event)" name="telefone" onblur="validacaoInput(formulario.telefone)" class="input_quality" maxlength="15" placeholder="(DDD + Número)" autocomplete="off">
+                <font color="red" class="alertas" id="alerta_telefone"></font>
+            </div>
+            <div class="main_div_contato">
+                <div> <!--CAIXA DE SELEÇÃO--> 
+                    <label for="assunto"><b>Assunto:</b><font color="red">*</font></label>
+                    <select class="select_quality" id="assunto" name="assunto" onblur="validacaoInput(formulario.assunto)">
+                        <option id="selecione">selecione</option>
+                        <option id="reclamações">Reclamações</option>
+                        <option id="solicitações">Solicitações</option>
+                        <option id="sugestões">Sugestões</option>
+                        <option id="elogios">Elogios</option>
+                    </select><br>
+                    <font class="alert_assunto alertas" color="red" id="alerta_assunto"></font>
                 </div>
-                <div class="main_div_formulario_email form_control">
-                    <label for="nomeCompleto" class="label_quality"><b>Email:</b><font color="red">*</font></label>
-                    <input type="email" class="input_quality" placeholder="" required>
+                <div class="radio_quality"> <!--OPÇÃO DE MARCAR--> 
+                    <b>Eu Sou:</b><font color="red">*</font><br>
+                    <input type="radio" id="radio_cliente" name="tipo" onblur="validacaoInput(formulario.tipo)"  value="cliente">
+                    <label for="cliente">Cliente</label><br>
+                    <input type="radio" id="radio_fornecedor" name="tipo" onblur="validacaoInput(formulario.tipo)"  value="fornecedor">
+                    <label for="fornecedor">Fornecedor</label><br>
+                    <font color="red" class="alertas" id="alerta_radio"></font>
                 </div>
-                <div class="main_div_formulario_telefone form_control">
-                    <label for="nomeCompleto" class="label_quality"><b>Telefone:</b><font color="red">*</font></label>
-                    <input type="tel" class="input_quality" placeholder="(DDD + Número)" pattern="([0-9]{2})[0-9]{8-9}" required>
-                </div>
-                <label class="main_div_form_textarea">Mensagem</label>
-                <textarea class="formcontrol_textarea" name=""  cols="45" rows="10"></textarea>
-                <div class="main_div_contato"> <!-- CAIXA DE SELEÇÃO-->
-                    <div class="main_div_tipoContato">
-                        <label for="contatoRegional" class="form-label"><b>Tipo de contato:</b><font color="red">*</font></label>
-                        <select class="form-select" aria-label="Default select example" id="contatoRegional" name="contatoRegional">
-                            <option value=""> -- Selecione -- </option>
-                            <option value="Reclamações">Reclamações</option>
-                            <option value="Solicitações">Solicitações</option>
-                            <option value="Sugestões">Sugestões</option>
-                            <option value="Elogios">Elogios</option>  
-                        </select>
-                    </div>
-                </div>       
-                <input type="submit">     
+            </div>
+            <div class="form_textarea">
+                <label class="form_message"><b>Mensagem:</b>
+                    <font color="red">*</font>
+                </label>
+                <textarea class="form_control_textarea" name="text" onblur="validacaoInput(formulario.text)" id="areatexto" cols="50" rows="10"></textarea>
+                <font color="red" class="alertas" id="alerta_text"></font>
+            </div>
+            <div class="button_quality">
+                <!-- <input class="input_button" type="submit" onclick="validar()"> -->
+                <button class="input_button" type="button" onclick="validar()">Enviar</button>
             </div>
         </form>
     </main>
+    <footer>
+        <div>
+
+        </div>
+        <div class="footer_quality">
+            <b>Copyright&copy;</b>
+        </div>
+    </footer>
 </body>
 
 </html>
