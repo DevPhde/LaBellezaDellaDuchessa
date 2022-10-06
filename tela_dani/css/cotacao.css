@@ -7,7 +7,10 @@ body{
     background-color: #926b6f;
 }
 main{
-    padding: 30px 50px;
+    padding: 50px 70px;
+    margin-left: 70px;
+    margin-bottom: 1100px;
+    
 }
 
 .title h1{
@@ -17,8 +20,8 @@ main{
 
 .card{
     position: relative;
-    width: 229px;
-    height: 320px;
+    width: 329px;
+    height: 520px;
     background-color: #000;
     border-radius: 20px;
     overflow: hidden;
@@ -60,6 +63,7 @@ main{
     align-items: center;
     padding-top: 20px;
     z-index: 1;
+    padding-bottom: 30px;
 }
 .card .imgBx img{
     max-width: 100%;
@@ -72,9 +76,28 @@ main{
     color: white;
     letter-spacing: 1px;
     text-transform: uppercase;
+    margin: 5px;
 }
 .contenteBx{
     text-align: center;
 }
+.detalhes{
+    text-decoration: none;
+    color:white;
+    padding: 8px;
+    background-color: rgb(83, 27, 27);
+    font-size: 10px;
+    margin: 5px;
+}
+
+
+
+
+.criadores p{
+    background-color: #000;
+    color :white;
+    text-align: center;
+}
+
 
 
