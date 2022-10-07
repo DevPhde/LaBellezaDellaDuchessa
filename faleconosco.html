@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <script src="./script/script-faleconosco.js"></script>
 </head>
+
 <body>
     <header class="cabecalho">
         <img src="./images/logo.jpg">
@@ -28,20 +30,34 @@
         <h1>FALE CONOSCO!</h1>
         <form method="POST" name="formulario">
             <div class="main_form_div">
-                <label for="nomeCompleto" class="label_quality"><b>Nome (ou Razão Social):</b><font color="red">*</font></label>
-                <input type="text" id="nomeCompleto"  name="nome" onblur="validacaoInput(formulario.nome)" class="input_quality" placeholder="">
-                <font color="red" class="alertas" id="alerta_nome"></font>                 
-                <label for="email" class="label_quality"><b>E-mail:</b><font color="red">*</font></label>
-                <input type="email" id="email" name="email" onblur="validacaoInput(formulario.email)" class="input_quality" placeholder="">
+                <label for="nomeCompleto" class="label_quality"><b>Nome (ou Razão Social):</b>
+                    <font color="red">*</font>
+                </label>
+                <input type="text" id="nomeCompleto" name="nome" onblur="validacaoInput(formulario.nome)"
+                    class="input_quality" placeholder="">
+                <font color="red" class="alertas" id="alerta_nome"></font>
+                <label for="email" class="label_quality"><b>E-mail:</b>
+                    <font color="red">*</font>
+                </label>
+                <input type="email" id="email" name="email" onblur="validacaoInput(formulario.email)"
+                    class="input_quality" placeholder="">
                 <font color="red" class="alertas" id="alerta_email"></font>
-                <label for="telefone" class="label_quality"><b>Telefone</b><font color="red">*</font></label>
-                <input type="tel" id="telefone" onkeyup="mascaraTelefone(event)" name="telefone" onblur="validacaoInput(formulario.telefone)" class="input_quality" maxlength="15" placeholder="(DDD + Número)" autocomplete="off">
+                <label for="telefone" class="label_quality"><b>Telefone</b>
+                    <font color="red">*</font>
+                </label>
+                <input type="tel" id="telefone" onkeyup="mascaraTelefone(event)" name="telefone"
+                    onblur="validacaoInput(formulario.telefone)" class="input_quality" maxlength="15"
+                    placeholder="(DDD + Número)" autocomplete="off">
                 <font color="red" class="alertas" id="alerta_telefone"></font>
             </div>
             <div class="main_div_contato">
-                <div> <!--CAIXA DE SELEÇÃO--> 
-                    <label for="assunto"><b>Assunto:</b><font color="red">*</font></label>
-                    <select class="select_quality" id="assunto" name="assunto" onblur="validacaoInput(formulario.assunto)">
+                <div>
+                    <!--CAIXA DE SELEÇÃO-->
+                    <label for="assunto"><b>Assunto:</b>
+                        <font color="red">*</font>
+                    </label>
+                    <select class="select_quality" id="assunto" name="assunto"
+                        onblur="validacaoInput(formulario.assunto)">
                         <option id="selecione">selecione</option>
                         <option id="reclamações">Reclamações</option>
                         <option id="solicitações">Solicitações</option>
@@ -50,11 +66,15 @@
                     </select><br>
                     <font class="alert_assunto alertas" color="red" id="alerta_assunto"></font>
                 </div>
-                <div class="radio_quality"> <!--OPÇÃO DE MARCAR--> 
-                    <b>Eu Sou:</b><font color="red">*</font><br>
-                    <input type="radio" id="radio_cliente" name="tipo" onblur="validacaoInput(formulario.tipo)"  value="cliente">
+                <div class="radio_quality">
+                    <!--OPÇÃO DE MARCAR-->
+                    <b>Eu Sou:</b>
+                    <font color="red">*</font><br>
+                    <input type="radio" id="radio_cliente" name="tipo" onblur="validacaoInput(formulario.tipo)"
+                        value="cliente">
                     <label class="radio_quality" for="cliente">Cliente</label><br>
-                    <input type="radio" id="radio_fornecedor" name="tipo" onblur="validacaoInput(formulario.tipo)"  value="fornecedor">
+                    <input type="radio" id="radio_fornecedor" name="tipo" onblur="validacaoInput(formulario.tipo)"
+                        value="fornecedor">
                     <label for="fornecedor">Fornecedor</label><br>
                     <font color="red" class="alertas" id="alerta_radio"></font>
                 </div>
@@ -63,11 +83,11 @@
                 <label class="form_message"><b>Mensagem:</b>
                     <font color="red">*</font>
                 </label>
-                <textarea class="form_control_textarea" name="text" onblur="validacaoInput(formulario.text)" id="areatexto" cols="50" rows="10"></textarea>
+                <textarea class="form_control_textarea" name="text" onblur="validacaoInput(formulario.text)"
+                    id="areatexto" cols="50" rows="10"></textarea>
                 <font color="red" class="alertas" id="alerta_text"></font>
             </div>
             <div class="button_quality">
-                <!-- <input class="input_button" type="submit" onclick="validar()"> -->
                 <button class="input_button" type="button" onclick="validar()">Enviar</button>
             </div>
         </form>
@@ -78,13 +98,13 @@
             <div class="iconesredes">
                 <div class="div_icon_github dist_icons">
                     <a href="http://github.com/DevPhde/LaBellezaDellaDuchessa">
-                        <img  class="logos" src="./images/github.png" alt="github icon">
+                        <img class="logos" src="./images/github.png" alt="github icon">
                     </a>
                 </div>
                 <div class="div_icon_facebook dist_icons">
                     <a href="www.facebook.com">
-                        <img  class="logos" src="./images/facebook.png" alt="facebook icon">
-                    </a>  
+                        <img class="logos" src="./images/facebook.png" alt="facebook icon">
+                    </a>
                 </div>
                 <div class="div_icon_instagram dist_icons">
                     <a href="www.instagram.com">
