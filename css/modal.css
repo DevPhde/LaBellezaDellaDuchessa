@@ -1,8 +1,9 @@
-
-
-
 p {
     text-align: justify;
+}
+
+main {
+    padding-bottom: 700px;
 }
 
 .content {
@@ -88,3 +89,47 @@ p {
 strong{
     color: #FFF;
 }
+
+/* FOOTER */
+
+footer {
+    background-color: #5c3337;  
+    margin-top: 100px;
+    color: #fef9f3;
+}
+
+.endereco {
+    font-size: 14px;
+}
+
+.creators {
+    text-align: center;
+    font-size: 15px;
+    color: black;
+    background-color: white;
+}
+
+.footerinteiro {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.dist_icons {
+    padding: 5px;
+}
+
+.iconesredes {
+    display: flex;
+}
+
+.logos {
+    width: 30px;
+    border-radius: 100px;
+}
+
+.fix_footer {
+    margin-top: 152px;
+}
+
+/* END FOOTER */
