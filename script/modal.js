@@ -1,4 +1,9 @@
 //------------------------------------------------------------------------------------------------//
+function cotacao() {
+    window.location.href="modal.html";
+}
+
+
 var produto1 = document.getElementById('produto1');
 produto1.onclick = function() {
    if((this.id === 'produto1')){

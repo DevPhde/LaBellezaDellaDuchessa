@@ -1,8 +1,9 @@
-
-
-
 p {
     text-align: justify;
+}
+
+main {
+    padding-bottom: 700px;
 }
 
 .content {
@@ -88,3 +89,4 @@ p {
 strong{
     color: #FFF;
 }
+
