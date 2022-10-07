@@ -321,4 +321,12 @@ footer {
   .menu ul {
     flex-direction: column;
   }
+  .caixa {
+    width: 90%;
+  }
+  #botao {
+    font-size: 15px;
+    font-weight: 900;
+    margin-right: 2%;
+  }
 }
