@@ -37,7 +37,7 @@ body {
 
 main {
   text-align: center;
-  height: 1200px;
+  height: 900px;
 }
 
 main h1 {
@@ -52,7 +52,7 @@ main h1 {
   padding-left: 100px;
   padding-right: 100px;
   display: flex;
-justify-content: center;
+  justify-content: center;
 }
 
 .imagemquemsomos {
@@ -99,7 +99,6 @@ footer {
 
 .endereco {
   font-size: 14px;
-  /* padding-right: 800px; */
 }
 
 .creators {
