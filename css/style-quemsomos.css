@@ -37,7 +37,7 @@ body {
 
 main {
   text-align: center;
-  height: 500px;
+  height: 1200px;
 }
 
 main h1 {
@@ -51,6 +51,8 @@ main h1 {
 .quemsomos {
   padding-left: 100px;
   padding-right: 100px;
+  display: flex;
+justify-content: center;
 }
 
 .imagemquemsomos {
@@ -67,7 +69,7 @@ main h1 {
 .textoquemsomos {
   width: 600px;
   float: left;
-  margin-left: 80px;
+  margin-left: 120px;
   font-size: 25px;
   text-align: justify;
 }
@@ -135,6 +137,26 @@ footer {
   .menu li a {
     font-size: 18px;
   }
+  .quemsomos {
+    flex-direction: column;
+    padding: 0 60px;
+  }
+
+  .imagemquemsomos {
+    width: 500px;
+    height: 300px;
+
+
+  }
+  
+  .textoquemsomos {
+    width: 500px;
+    font-size: 25px;
+    text-align: justify;
+    margin-top: 40px;
+    margin-left:0;
+  }
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -149,6 +171,8 @@ footer {
   .menu ul {
     flex-direction: column;
   }
+
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -173,7 +197,7 @@ footer {
   }
 
   .menu li a {
-    font-size: 12px;
+    font-size: 19px;
   }
 
   .menu ul {
@@ -187,11 +211,27 @@ footer {
   }
 
   .menu li a {
-    font-size: 19px;
+    font-size: 15px;
   }
 
   .menu ul {
     flex-direction: column;
+  }
+  .quemsomos {
+    padding: 0 60px;
+  }
+
+  .imagemquemsomos {
+    width: 350px;
+    height: 200px;
+
+
+  }
+  
+  .textoquemsomos {
+    width: 350px;
+    font-size: 20px;
+    margin-top: 40px;
   }
 }
 
@@ -206,6 +246,23 @@ footer {
 
   .menu ul {
     flex-direction: column;
+  }
+
+  .quemsomos {
+    padding: 0 20px;
+  }
+
+  .imagemquemsomos {
+    width: 90%;
+    height: 150px;
+
+
+  }
+  
+  .textoquemsomos {
+    width: 90%;
+    font-size: 20px;
+    margin-top: 40px;
   }
 }
 
