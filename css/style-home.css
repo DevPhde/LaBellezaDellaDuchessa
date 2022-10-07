@@ -68,14 +68,21 @@
 
 }
 
-b {
+.p_max {
     background-color: black;
     color: white;
     border: 1px solid black;
     border-radius: 50px 20px;
 }
 
-b:hover {
+/* b {
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    border-radius: 50px 20px;
+} */
+
+strong:hover {
     color: black;
     background-color: #d8b79d !important;
     border: 1px solid #d8b79d !important;
@@ -92,6 +99,7 @@ b:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    padding-bottom: 50px;
 
 }
 
@@ -118,7 +126,7 @@ b:hover {
 
 footer {
     background-color: #5c3337;  
-    margin-top: 100px;
+    margin-top: 0px;
     color: #fef9f3;
 }
 
