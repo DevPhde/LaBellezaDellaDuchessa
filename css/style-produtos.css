@@ -1,0 +1,332 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Ubuntu", sans-serif;
+}
+
+/* HEADER */
+
+.cabecalho {
+  background-color: #fef9f3;
+  text-align: center;
+  padding: 10px;
+}
+
+.cabecalho img {
+  width: 600px;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+
+.menu li a {
+  text-decoration: none;
+  font-size: 25px;
+  letter-spacing: 3px;
+  color: #5c3337;
+}
+
+/* END HEADER */
+
+/* CONTEÚDO DA PÁGINA */
+.container {
+  text-align: center;
+  margin: 0;
+  letter-spacing: 3px;
+  color: #5c3337;
+  font-size: 15px;
+  background-color: #f9f9f9;
+}
+
+.produtos,
+.servicos {
+  width: 100%;
+  display: inline-block;
+}
+
+.titulo {
+  float: left;
+  margin-top: 10%;
+  margin-left: 100px;
+  width: 20px;
+}
+
+.imagensproduto,
+.imagensservico {
+  width: 80%;
+  float: right;
+}
+
+.caixa {
+  width: 260px;
+  height: 260px;
+  border: solid #2b2b2b 3px;
+  border-radius: 20px;
+  margin: 85px 0;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.produtos {
+  background-color: #5c3337;
+  color: #fef9f3;
+}
+
+.produto1 {
+  background-image: url("../images/progressiva-algodao--plastica-dos-fios---1l-01-2021-12-13-11-31-14-926x926.jpg");
+  background-size: cover;
+}
+.produto2 {
+  background-image: url("../images/mascara.png");
+  background-size: cover;
+}
+.produto3 {
+  background-image: url("../images/sc.png");
+  background-size: cover;
+}
+.produto4 {
+  background-image: url("../images/protetor.png");
+  background-size: cover;
+}
+
+.produtos .informacao {
+  height: 100%;
+  background-color: rgba(254, 249, 243, 0.8);
+  border-radius: 14px;
+  padding: 0 5px;
+  color: #5c3337;
+  opacity: 0;
+}
+
+.servicos .informacao {
+  height: 100%;
+  background-color: rgba(92, 51, 55, 0.8);
+  border-radius: 16px;
+  padding: 0 5px;
+  color: #fef9f3;
+  opacity: 0;
+}
+
+.servicos {
+  background-color: #fef9f3;
+  color: #5c3337;
+}
+
+.informacao h2 {
+  width: 100%;
+  float: left;
+  margin-top: 100px;
+}
+
+.servico1 {
+  background-image: url("../images/cabelo.jpg");
+  background-size: cover;
+}
+
+.servico2 {
+  background-image: url("../images/sobrancelha.jpg");
+  background-size: cover;
+}
+
+.servico3 {
+  background-image: url("../images/maquiagem.jpg");
+  background-size: cover;
+}
+
+.servico4 {
+  background-image: url("../images/manicure.jpg");
+  background-size: cover;
+}
+
+.informacao:hover {
+  opacity: 1;
+}
+
+#botao {
+  font-size: 18px;
+  font-weight: 900;
+  background: #5c3337;
+  border: 0;
+  margin-bottom: 40px;
+  margin-right: 11%;
+  color: #fef9f3;
+  padding: 10px 20px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  float: right;
+  width: auto;
+  height: auto;
+}
+
+#botao:hover {
+  background: #f3d8cd;
+  box-shadow: insert 2px 2px 2px rgba(0, 0, 0, 0.2);
+  color: #5c3337;
+  text-shadow: none;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -o-trasition: 1s;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: #5c3337;
+  color: #fef9f3;
+}
+
+.endereco {
+  font-size: 14px;
+  /* padding-right: 800px; */
+}
+
+.creators {
+  text-align: center;
+  font-size: 15px;
+  color: black;
+  background-color: white;
+}
+
+.footerinteiro {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.dist_icons {
+  padding: 5px;
+}
+
+.iconesredes {
+  display: flex;
+}
+
+.logos {
+  width: 30px;
+  border-radius: 100px;
+}
+
+/* MEDIA */
+
+@media only screen and (max-width: 800px) {
+  .cabecalho img {
+    width: 400px;
+  }
+
+  .menu li a {
+    font-size: 18px;
+  }
+  .imagensproduto,
+  .imagensservico {
+    float: none;
+    display: block;
+    margin-left: 9%;
+  }
+  .titulo {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-left: -4%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .cabecalho img {
+    width: 400px;
+  }
+
+  .menu li a {
+    font-size: 20px;
+  }
+
+  .menu ul {
+    flex-direction: column;
+  }
+  main {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .cabecalho img {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .menu li a {
+    font-size: 20px;
+  }
+
+  .menu ul {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 590px) {
+  .cabecalho img {
+    width: 150px;
+  }
+
+  .menu li a {
+    font-size: 19px;
+  }
+
+  .menu ul {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .cabecalho img {
+    width: 150px;
+  }
+
+  .menu li a {
+    font-size: 15px;
+  }
+
+  .menu ul {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .cabecalho img {
+    width: 150px;
+  }
+
+  .menu li a {
+    font-size: 15px;
+  }
+
+  .menu ul {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .cabecalho img {
+    width: 150px;
+  }
+
+  .menu li a {
+    font-size: 11px;
+  }
+
+  .menu ul {
+    flex-direction: column;
+  }
+  .caixa {
+    width: 90%;
+  }
+  #botao {
+    font-size: 15px;
+    font-weight: 900;
+    margin-right: 2%;
+  }
+}

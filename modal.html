@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Bellezza Della Duchessa</title>
+    <link rel="stylesheet" type="text/css" href="./css/style-cotacao.css">
+    <link rel="stylesheet" type="text/css" href="./css/style-cotacao-dif.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+
+    <link rel="preload" href="./css/style-modal.css">
+    <link rel="stylesheet" href="./css/style-modal.css">
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <img src="./images/logo.jpg">
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">INÍCIO</a></li>
+                <li><a href="quemsomos.html">QUEM SOMOS</a></li>
+                <li><a href="nossaequipe.html">NOSSA EQUIPE</a></li>
+                <li><a href="produtoseservicos.html">NOSSOS PRODUTOS E SERVIÇOS</a></li>
+                <li><a href="faleconosco.html">FALE CONOSCO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="title">
+            <h1>COTAÇÃO DE VALORES</h1>
+        </div>
+        <div class="container">
+            <div class="card">
+                <div class="imgBx">
+                    <img src="images/progressiva.webp" alt="" id="img1">
+                </div>
+                <div class="contenteBx" id="produto1">
+                    <h3>Progressiva salvatore<br> <strong>premium</strong></h3>
+                    <h2 class="preco">R$ 345,00</h2><br>
+                    <a href="#" class="detalhes" onclick="openModal('dv-modal')">Detalhes</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="imgBx">
+                    <img src="images/progressiva-algodao--plastica-dos-fios---1l-01-2021-12-13-11-31-14-926x926.png"
+                        alt="" id="img2">
+                </div>
+                <div class="contenteBx" id="produto2">
+                    <h3>Plástica Dos Fios</h3>
+                    <h2 class="preco">R$ 259,00</h2><br>
+                    <a href="#" class="detalhes" onclick="openModal('dv-modal')">Detalhes</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="imgBx">
+                    <img src="images/protetor-semfundo.png" alt="" id="img3">
+                </div>
+                <div class="contenteBx" id="produto3">
+                    <h3>Lanza Healing 250ml</h3>
+                    <h2 class="preco">R$ 67,00</h2><br>
+                    <a href="#" class="detalhes" onclick="openModal('dv-modal')">Detalhes</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="imgBx">
+                    <img src="images/scc.png" alt="" id="img4">
+                </div>
+                <div class="contenteBx" id="produto4">
+                    <h3>SALÃO EM CASA</h3>
+                    <h2 class="preco">R$ 105,00</h2><br>
+                    <a href="#" class="detalhes" onclick="openModal('dv-modal')">Detalhes</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="imgBx">
+                    <img src="images/mascara-semfundo.png" alt="" id="img5">
+                </div>
+                <div class="contenteBx" id="produto5">
+                    <h3>Creme Rosa Mosqueta</h3>
+                    <h2 class="preco">R$ 169,96</h2><br>
+                    <a href="#" class="detalhes" onclick="openModal('dv-modal')">Detalhes</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="imgBx">
+                    <img src="images/tratamento.png" alt="" id="img6">
+                </div>
+                <div class="contenteBx" id="produto6">
+                    <h3>DOMA CABELO</h3>
+                    <h2 class="preco">R$ 467,00</h2><br>
+                    <a href="#" class="detalhes" onclick="openModal('dv-modal')">Detalhes</a>
+                </div>
+            </div>
+
+        </div>
+        <div id="dv-modal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 style="color: white;">NOSSOS VALORES</h1>
+                    <h3 style="color:blanchedalmond">Descrição</h3><br>
+                    <h4>
+                        <font id="descricao"></font>
+                    </h4>
+
+                </div>
+
+                <div class="modal-footer">
+                    <button class="btn" onclick="closeModal('dv-modal')">Fechar</button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <div class="footerinteiro">
+          <p class="endereco">
+            Endereço:<br />Av. Monsenhor Félix, 1234 - Irajá, Rio de Janeiro - RJ,
+            21235-112
+          </p>
+          <div class="iconesredes">
+            <div class="div_icon_github dist_icons">
+              <a href="http://github.com/DevPhde/LaBellezaDellaDuchessa">
+                <img class="logos" src="./images/github.png" alt="github icon" />
+              </a>
+            </div>
+            <div class="div_icon_facebook dist_icons">
+              <a href="https://www.facebook.com/">
+                <img class="logos" src="./images/facebook.png" alt="facebook icon" />
+              </a>
+            </div>
+            <div class="div_icon_instagram dist_icons">
+              <a href="https://www.instagram.com/">
+                <img class="logos" src="./images/instagram.png" alt="instagram icon" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="creators">
+          <b>Copyright&copy;</b>
+        </div>
+      </footer>
+</body>
+<script src="./script/modal.js"></script>
+
+</html>

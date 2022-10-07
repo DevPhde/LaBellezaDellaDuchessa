@@ -1,0 +1,171 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* HEADER */
+.cabecalho {
+    background-color: #fef9f3;
+    text-align: center;
+    padding: 10px;
+}
+
+.cabecalho img {
+    width: 600px;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+
+
+}
+
+.menu li a {
+    text-decoration: none;
+    font-size: 25px;
+    letter-spacing: 3px;
+    color: #5c3337;
+}
+
+/* END HEADER */
+
+
+
+
+/* .cabecalho {
+    background-color: #fef9f3;
+    text-align: center;
+    padding: 0 100px 20px 100px;
+
+}
+
+.cabecalho img {
+    width: 600px;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+
+}
+
+.menu li a {
+    text-decoration: none;
+    font-size: 25px;
+    letter-spacing: 3px;
+    color: #5c3337;
+} */
+
+.corpo {
+
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    width: 100%;
+}
+
+.conteudo {
+    display: table;
+}
+
+#div1 {
+    height: 400px;
+    background-color: #9e6e58;
+    padding-bottom: 4px;
+}
+
+.div-foto {
+    float: left;
+}
+
+.ps {
+    font-size: 50px;
+    position: relative;
+    top: 140px;
+}
+
+.p_max {
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    border-radius: 50px 20px;
+}
+
+strong:hover {
+    color: black;
+    background-color: #d8b79d !important;
+    border: 1px solid #d8b79d !important;
+}
+
+.main {
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border: black;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 50px;
+}
+
+.main div {
+    border: 5px solid #5c3337;
+    background-color: whitesmoke;
+    border-radius: 30px;
+    width: 300px;
+    height: 300px;
+    padding: 5px 20px; 
+    margin: 10px;
+    display: flex;
+    display: inline-block;
+}
+
+.main img {
+    padding-top: 10px;
+    border-radius: 50px;
+    height: 90px;
+    width: 100px;
+}
+
+footer {
+    background-color: #5c3337;  
+    margin-top: 0px;
+    color: #fef9f3;
+}
+
+.endereco {
+    font-size: 14px;
+}
+
+.creators {
+    text-align: center;
+    font-size: 15px;
+    color: black;
+    background-color: white;
+}
+
+.footerinteiro {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.dist_icons {
+    padding: 5px;
+}
+
+.iconesredes {
+    display: flex;
+}
+
+.logos {
+    width: 30px;
+    border-radius: 100px;
+}
