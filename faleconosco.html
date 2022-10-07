@@ -18,6 +18,7 @@
             <ul>
                 <li><a href="index.html">INÍCIO</a></li>
                 <li><a href="quemsomos.html">QUEM SOMOS</a></li>
+                <li><a href="nossaequipe.html">NOSSA EQUIPE</a></li>
                 <li><a href="produtoseservicos.html">NOSSOS PRODUTOS E SERVIÇOS</a></li>
                 <li><a href="faleconosco.html">FALE CONOSCO</a></li>
             </ul>
@@ -52,7 +53,7 @@
                 <div class="radio_quality"> <!--OPÇÃO DE MARCAR--> 
                     <b>Eu Sou:</b><font color="red">*</font><br>
                     <input type="radio" id="radio_cliente" name="tipo" onblur="validacaoInput(formulario.tipo)"  value="cliente">
-                    <label for="cliente">Cliente</label><br>
+                    <label class="radio_quality" for="cliente">Cliente</label><br>
                     <input type="radio" id="radio_fornecedor" name="tipo" onblur="validacaoInput(formulario.tipo)"  value="fornecedor">
                     <label for="fornecedor">Fornecedor</label><br>
                     <font color="red" class="alertas" id="alerta_radio"></font>
@@ -72,10 +73,28 @@
         </form>
     </main>
     <footer>
-        <div>
-
+        <div class="footerinteiro">
+            <p class="endereco">Endereço:<br>Av. Monsenhor Félix, 1234 - Irajá, Rio de Janeiro - RJ, 21235-112</p>
+            <div class="iconesredes">
+                <div class="div_icon_github dist_icons">
+                    <a href="http://github.com/DevPhde/LaBellezaDellaDuchessa">
+                        <img  class="logos" src="./images/github.png" alt="github icon">
+                    </a>
+                </div>
+                <div class="div_icon_facebook dist_icons">
+                    <a href="www.facebook.com">
+                        <img  class="logos" src="./images/facebook.png" alt="facebook icon">
+                    </a>  
+                </div>
+                <div class="div_icon_instagram dist_icons">
+                    <a href="www.instagram.com">
+                        <img class="logos" src="./images/instagram.png" alt="instagram icon">
+                    </a>
+                </div>
+            </div>
         </div>
-        <div class="footer_quality">
+        <hr>
+        <div class="creators">
             <b>Copyright&copy;</b>
         </div>
     </footer>

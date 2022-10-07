@@ -6,14 +6,9 @@
 
 body {
     background-color: #f3d8cd;
-
 }
 
 /* HEADER */
-a:hover {
-    background-color: #ced4da;
-    border-radius: 5px 8px;
-}
 
 .cabecalho {
     background-color: #fef9f3;
@@ -56,6 +51,10 @@ main h1 {
     color: #5c3337;
     padding-top: 25px;
 }
+.mensagem {
+    text-align: center;
+    padding-top: 150px;
+}
 
 form b {
     color: #5c3337;
@@ -87,6 +86,10 @@ form b {
     justify-content: space-evenly;
     text-align: center;
     padding: 80px 0 0 0;
+}
+
+.radio_quality {
+    color: #5c3337;
 }
 
 .select_quality {
@@ -126,9 +129,44 @@ form b {
 /*END MAIN */
 /* FOOTER */
 
-.footer_quality {
+footer {
+    background-color: #5c3337;  
+    margin-top: 100px;
+    color: #fef9f3;
+}
+
+.endereco {
+    font-size: 14px;
+}
+
+.creators {
     text-align: center;
-    background-color: #fef9f3;
+    font-size: 15px;
+    color: black;
+    background-color: white;
+}
+
+.footerinteiro {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.dist_icons {
+    padding: 5px;
+}
+
+.iconesredes {
+    display: flex;
+}
+
+.logos {
+    width: 30px;
+    border-radius: 100px;
+}
+
+.fix_footer {
+    margin-top: 152px;
 }
 
 /* END FOOTER */
