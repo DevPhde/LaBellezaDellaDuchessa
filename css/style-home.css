@@ -4,7 +4,38 @@
     font-family: 'Ubuntu', sans-serif;
 }
 
+/* HEADER */
 .cabecalho {
+    background-color: #fef9f3;
+    text-align: center;
+    padding: 10px;
+}
+
+.cabecalho img {
+    width: 600px;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+
+
+}
+
+.menu li a {
+    text-decoration: none;
+    font-size: 25px;
+    letter-spacing: 3px;
+    color: #5c3337;
+}
+
+/* END HEADER */
+
+
+
+
+/* .cabecalho {
     background-color: #fef9f3;
     text-align: center;
     padding: 0 100px 20px 100px;
@@ -27,7 +58,7 @@
     font-size: 25px;
     letter-spacing: 3px;
     color: #5c3337;
-}
+} */
 
 .corpo {
 
