@@ -2,8 +2,8 @@
 
 <p>Neste projeto utilizamos as tecnologias HTML5, CSS e Javascript para desenvolver um site com 7 páginas web, para promover um salão de beleza. Sendo assim, o projeto foi dividido em 5 partes, cada um do grupo ficando responsável por uma parte e no fim sendo unido todo o código. Utilizamos o seguinte fluxograma para demonstrar nossa arquitetura do github. Começando pela parte de baixo, temos as 5 branchs responsáveis por armazenar o código de cada membro do time, tais branchs são ligadas diretamente com a branch "mãe" nomeada EPIC, Após o término individual de cada membro, o código é unido por meio de merge das branchs "filhas"(EPIC-HOME,EPIC-PS,EPIC/CONTATO,EPIC-QSOMOS e EPIC-COTACAO) com a branch "mãe"(EPIC) utilizando PRs.</p>
 
-<div>
-<img height="180em" src="./images/FLUXOGRAMA.png">
+<div align="center">
+<img height="250em" src="./images/FLUXOGRAMA.png">
 </div>
 
 ### Explicação:
