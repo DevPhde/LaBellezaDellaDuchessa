@@ -1,0 +1,103 @@
+*{
+    
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #926b6f;
+}
+main{
+    padding: 50px 70px;
+    margin-left: 70px;
+    margin-bottom: 1100px;
+    
+}
+
+.title h1{
+    color:white;
+    text-align: center;
+}
+
+.card{
+    position: relative;
+    width: 329px;
+    height: 520px;
+    background-color: #000;
+    border-radius: 20px;
+    overflow: hidden;
+    float: left;
+    margin-left: 30px;
+    margin-top: 30px;
+
+
+}
+.card:before{
+    content: '';
+    position: absolute;
+    top: -50%;
+    width: 100%;
+    height: 100%;
+    background: #3a2d2e;
+    transform: skewY(345deg);
+    transition: 0.5s;
+}
+.card:hover::before{
+    transform: skewY(390deg);
+    top: -70%;
+
+}
+.card::after{
+    content: 'Promoção';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-weight: 600;
+    font-size: 3em;
+    color:rgba(161, 159, 159, 0.1)
+}
+.card .imgBx{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    z-index: 1;
+    padding-bottom: 30px;
+}
+.card .imgBx img{
+    max-width: 100%;
+    transition: 0.5;
+}
+.card:hover .imgBx img{
+    max-width: 60%;
+}
+.contenteBx h3,h2{
+    color: white;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 5px;
+}
+.contenteBx{
+    text-align: center;
+}
+.detalhes{
+    text-decoration: none;
+    color:white;
+    padding: 8px;
+    background-color: rgb(83, 27, 27);
+    font-size: 10px;
+    margin: 5px;
+}
+
+
+
+
+.criadores p{
+    background-color: #000;
+    color :white;
+    text-align: center;
+}
+
+
+
