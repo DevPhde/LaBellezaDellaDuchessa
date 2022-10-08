@@ -24,7 +24,7 @@ A  branch Production é onde será colocado para distriuição ao usuário (colo
 <p>Nesse primeiro módulo fomos desafiados a criar um site de uma mini empresa de bairro que está começando a expandir o seu negócio.</p><br>
 <p>Nossa equipe é formada por 5 integrantes: Daniella, Diego, Indiane, Paloma e Rian. A organização das tarefas de cada integrante foi designada com intuito de todos conseguirem participar de forma equilibrada. A escolha do tema foi realizada por meio de sorteio para que fosse justo. O tema do salão de beleza se tornou um desafio para equipe pois não existem muitos sites online com a proposta que decidimos oferecer, após muito trabalho e dedicação de todos nasceu o La Bellezza Della Duchessa.</p>
 <h3>Proposta</h3>
-<p>La Bellezza Della Duchessa traz ao público uma inovação na área da beleza, além de encantar com produtos inovadores.</p>
+<p>La Bellezza Della Duchessa traz ao público uma inovação na área da beleza, além de encantar com produtos 100% naturais.</p>
 <h3>Estrutura Page</h3>
 <p>A pagina foi dividida em 6 partes(Inicio, quem somos,nossa equipe,nossos produtos e serviços,cotação e fale conosco)</p>
 <h4>Inicio</h4>
